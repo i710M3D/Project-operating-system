@@ -1,4 +1,5 @@
 Présentation
+
 Le but de ce TP est la mise en application des concepts liés à la synchronisation et la communication des processus à
 travers l’utilisation d’outils offerts par le système d’exploitation UNIX. On se propose d’implémenter un système
 d’allocation de ressources utilisant une méthode qui sera décrite par la suite :
@@ -11,7 +12,9 @@ processus est satisfaite et continu son exécution ; dans le cas contraire, il s
 plusieurs processus peuvent subir cette préemption.
 - Quand une libération a lieu, on essaye de satisfaire en priorité les processus selon deux critères : l’ancienneté dans
 l’attente et le nombre de fois qu’un processus est victime depuis son attente.
+
 Modélisation
+
 Les éléments qui interviennent dans le problème sont :
  Le gestionnaire de ressources implémenté par un processus Gerant cyclique qui reçoit les requêtes des
 processus dans un tampon nommé TRequetes. Ce processus traite les requêtes une à une selon la méthode
@@ -38,7 +41,9 @@ Il s’agit de synchroniser tous ces processus à l’aide de sémaphores dans l
 dessus. Le système doit comprendre une interface (textuelle seulement, sous forme d’impressions) permettant de
 
 suivre et de comprendre le fonctionnement des différentes entités du service objet de ce TP.
+
 Connaissances requises sous Unix
+
 - Création de processus
 - Partage de mémoire
 - Synchronisation par sémaphores
